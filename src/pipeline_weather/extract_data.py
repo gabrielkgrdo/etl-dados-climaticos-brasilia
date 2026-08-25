@@ -18,7 +18,7 @@ def extract_data_weather(url:str) -> list:
         logging.warning("Erro na requisição")
         return []
 
-    output_path = 'data/weather_data.json'
+    output_path = Path('/opt/airflow/data/weather_data.json')
     output_dir = Path(output_path).parent
     output_dir.mkdir(parents=True, exist_ok=True)
 
