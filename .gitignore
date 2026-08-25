@@ -17,6 +17,5 @@ config/.env
 logs/
 
 # Data
-
-data/
+/data
 
