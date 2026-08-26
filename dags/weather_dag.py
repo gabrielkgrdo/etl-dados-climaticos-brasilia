@@ -26,7 +26,7 @@ url = f'https://api.openweathermap.org/data/2.5/weather?q=Brasilia,BR&units=metr
         'retry_delay': timedelta(minutes=5)
         },
     description='Pipeline ETL Clima Brasília',
-    schedule='0 */1 * * * ',
+    schedule='*/10 * * * * ',
     start_date=datetime(2026, 8, 25),
     catchup=False,
     tags=['clima','etl']
